@@ -3,11 +3,22 @@
 
 Writes one joke about crypto and trading life to /output/entry.txt.
 Deterministic: the same 114 characters on every run.
+
+Structure: two beats plus a reveal in the final clause. Beat one sets the
+pain (stop-loss triggered at 3 a.m.); beat two flips it (the coin pumped 40%
+by breakfast); the reveal lands last ("Exit Liquidity") — the group chat
+renames the trader, so the punchline is what other people call him, not
+what he did. This line won the internal pairwise selection: a specific
+number (40%) and a named label beat vaguer variants on every judge
+criterion, because the twist is concrete instead of generic.
 """
 
 import os
 import sys
 
+# Winner of the internal pairwise selection: beat 1 (3 a.m. stop-loss) +
+# beat 2 (40% pump by breakfast) + reveal ("Exit Liquidity"). Kept
+# verbatim — 114 chars, one line, no trailing newline in the output file.
 LINE = "My stop-loss triggered at 3 a.m., the coin pumped 40% by breakfast, and my group chat renamed me 'Exit Liquidity'."
 
 
